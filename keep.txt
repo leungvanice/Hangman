@@ -1,0 +1,25 @@
+
+function checkLetter(val) {
+  var counter = 0;
+  for (letter of toGuessText) {
+    if (val === letter) {
+      console.log("Correct");
+      var theIndex = toGuessText.indexOf(val);
+      console.log(theIndex);
+      
+      break;
+    } else {
+      counter++;
+      if (counter === toGuessText.length - 1) {
+        if (wrong_history == "") {
+          wrong_history += val;
+          console.log(wrong_history);
+        } else {
+          wrong_history += ", ";
+          wrong_history += val;
+          console.log(wrong_history);
+        }
+      }
+    }
+  }
+}
