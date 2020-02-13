@@ -1,6 +1,6 @@
 var guess_text = document.querySelector("#guess-text");
-var toGuessText = "okay";
-var correct_ans = "okay";
+var toGuessText;
+var correct_ans;
 var underscoredGuessText = "_";
 var wrong_history = "";
 var wrong_guess_ele = document.querySelector("#wrong-guess-text");
@@ -17,7 +17,7 @@ function settingUnderscoreFunc() {
   photo_ele.src = first_photo;
   wrong_history = "";
   wrong_guess_ele.innerHTML = wrong_history;
-  toGuessText = "okay";
+  toGuessText = prompt("Type in one word: ");
   underscoredGuessText = "_";
   for (let i = 1; i < toGuessText.length; i++) {
     underscoredGuessText += " ";
