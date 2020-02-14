@@ -18,6 +18,7 @@ function settingUnderscoreFunc() {
   wrong_history = "";
   wrong_guess_ele.innerHTML = wrong_history;
   toGuessText = prompt("Type in one word: ");
+  correct_ans = toGuessText;
   underscoredGuessText = "_";
   for (let i = 1; i < toGuessText.length; i++) {
     underscoredGuessText += " ";
